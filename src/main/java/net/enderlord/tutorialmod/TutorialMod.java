@@ -1,5 +1,7 @@
 package net.enderlord.tutorialmod;
 
+import net.enderlord.tutorialmod.block.ModBlocks;
+import net.enderlord.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +13,8 @@ public class TutorialMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 
 	}
 }
